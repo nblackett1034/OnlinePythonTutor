@@ -616,6 +616,8 @@ export abstract class AbstractBaseFrontend {
     var survey_v14 = `
     <p style="font-size: 9pt; margin-top: 12px; margin-bottom: 15px; line-height: 150%;">
 
+    <a style="font-size: 11pt; font-weight: bold;" href="http://pgbovine.net/support.htm" target="_blank">Donate</a> to keep the servers running (no new features planned, but server costs are rising!)
+    <p/>
     Help improve this tool by completing a <a style="font-size: 10pt; font-weight: bold;" href="https://docs.google.com/forms/d/e/1FAIpQLSfQJP1ojlv8XzXAvHz0al-J_Hs3GQu4XeblxT8EzS8dIzuaYA/viewform?entry.956368502=${this.userUUID}" target="_blank">short user survey</a>
     </p>`;
     $('#surveyPane').html(survey_v14);
@@ -625,6 +627,9 @@ export abstract class AbstractBaseFrontend {
 
 // removed donation link on 2019-03-26
 //    Keep this tool free by making a <a style="font-size: 10pt; font-weight: bold;" href="http://pgbovine.net/support.htm" target="_blank">small donation</a> (PayPal, Patreon, credit/debit card)
+//
+// re-added a new donation link on 2020-05-19 ...
+//    <a style="font-size: 11pt; font-weight: bold;" href="http://pgbovine.net/support.htm" target="_blank">Donate</a> to keep the servers running (no new features planned, but server costs are rising!)
 
 
 /* For survey questions. Versions of survey wording:

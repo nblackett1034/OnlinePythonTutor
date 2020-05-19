@@ -23341,7 +23341,7 @@ var AbstractBaseFrontend = /** @class */ (function () {
     };
     AbstractBaseFrontend.prototype.setSurveyHTML = function () {
         // use ${this.userUUID} within the string ...
-        var survey_v14 = "\n    <p style=\"font-size: 9pt; margin-top: 12px; margin-bottom: 15px; line-height: 150%;\">\n\n    Help improve this tool by completing a <a style=\"font-size: 10pt; font-weight: bold;\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSfQJP1ojlv8XzXAvHz0al-J_Hs3GQu4XeblxT8EzS8dIzuaYA/viewform?entry.956368502=" + this.userUUID + "\" target=\"_blank\">short user survey</a>\n    </p>";
+        var survey_v14 = "\n    <p style=\"font-size: 9pt; margin-top: 12px; margin-bottom: 15px; line-height: 150%;\">\n\n    <a style=\"font-size: 11pt; font-weight: bold;\" href=\"http://pgbovine.net/support.htm\" target=\"_blank\">Donate</a> to keep the servers running (no new features planned, but server costs are rising!)\n    <p/>\n    Help improve this tool by completing a <a style=\"font-size: 10pt; font-weight: bold;\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSfQJP1ojlv8XzXAvHz0al-J_Hs3GQu4XeblxT8EzS8dIzuaYA/viewform?entry.956368502=" + this.userUUID + "\" target=\"_blank\">short user survey</a>\n    </p>";
         $('#surveyPane').html(survey_v14);
     };
     return AbstractBaseFrontend;
@@ -23349,6 +23349,9 @@ var AbstractBaseFrontend = /** @class */ (function () {
 exports.AbstractBaseFrontend = AbstractBaseFrontend;
 // removed donation link on 2019-03-26
 //    Keep this tool free by making a <a style="font-size: 10pt; font-weight: bold;" href="http://pgbovine.net/support.htm" target="_blank">small donation</a> (PayPal, Patreon, credit/debit card)
+//
+// re-added a new donation link on 2020-05-19 ...
+//    <a style="font-size: 11pt; font-weight: bold;" href="http://pgbovine.net/support.htm" target="_blank">Donate</a> to keep the servers running (no new features planned, but server costs are rising!)
 /* For survey questions. Versions of survey wording:
 
 [see ../../v3/js/opt-frontend-common.js for older versions of survey wording - v1 to v7]
