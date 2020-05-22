@@ -1,0 +1,23 @@
+def main():
+    message = ("For this question you are required to submit\n" +
+            "ONE line of text, the line numbered 100 from the\n" +
+            "output file created by this program.")
+    print(message)
+
+    write_without_blank_lines("Lab07Q06_in.txt", "Lab07Q06_out.txt")
+
+
+def write_without_blank_lines(filename_in, filename_out):
+    file_in = open(filename_in, "r")
+    contents = file_in.readlines()
+    file_in.close()
+    number = 1
+    file_out = open(filename_out, "w")
+    for each_line in contents:
+        file_out.write(str(number) + ". " + each_line + "/n")
+        number += 1
+    file_out.close()
+    
+
+
+main()
